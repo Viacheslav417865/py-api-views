@@ -39,7 +39,6 @@ urlpatterns = [
         cinema_hall_detail,
         name="cinema-hall-detail",
     ),
-    path("", MovieList.as_view(), name="movie-list"),
 ]
 
 app_name = "cinema"
