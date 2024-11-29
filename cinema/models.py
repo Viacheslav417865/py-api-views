@@ -17,7 +17,7 @@ class Genre(models.Model):
 
 
 class CinemaHall(models.Model):
-    name = models.CharField(max_length=255)
+    name = models.CharField(max_length=100)
     rows = models.IntegerField()
     seats_in_row = models.IntegerField()
 
@@ -26,7 +26,7 @@ class CinemaHall(models.Model):
 
 
 class Movie(models.Model):
-    title = models.CharField(max_length=255)
+    title = models.CharField(max_length=100)
     description = models.TextField()
     duration = models.DurationField()
     actors = models.ManyToManyField(Actor)
